@@ -1,0 +1,9 @@
+const VALUES = {
+    PERMISSION_NOT_ANY: 0,
+    PERMISSION_SUBNODE: 1,
+    PERMISSION_SELF_AND_SUBNODE: 2,
+};
+
+export {
+    VALUES
+};

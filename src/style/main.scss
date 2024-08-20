@@ -1,0 +1,137 @@
+@import "open-sans-font.css";
+
+::-webkit-scrollbar {
+  width: .2rem;
+  height: .4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba($theme-color-master, .3);
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/*reset*/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, ul, dd, dt, li, object, a, b, em, i, img, samp, span, strong, sub, sup, tt, var, input, select {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font: 16px/1.5 'Open Sans';
+  color: #666;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-text-size-adjust: none;
+}
+
+* {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif !important;
+}
+
+input, button, img, fieldset {
+  outline: none
+}
+
+input, select {
+  outline: none
+}
+
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+/* a */
+a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none
+}
+
+a:hover {
+  text-decoration: none
+}
+
+/* list
+ul, ol {
+    list-style: none;
+}
+*/
+
+/*float*/
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.global-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.global-relative {
+  position: relative;
+}
+
+@font-face {
+  font-family: 'kcs-icon';
+  src: url('/notice/web/iconfont/iconfont.eot?timestamp=1577276337000');
+  src: url('/notice/web/iconfont/iconfont.eot?#iefix&timestamp=1577276337000') format('embedded-opentype'),
+  url('/notice/web/iconfont/iconfont.woff?timestamp=1577276337000') format('woff'),
+  url('/notice/web/iconfont/iconfont.ttf?timestamp=1577276337000') format('truetype'),
+  url('/notice/web/iconfont/iconfont.svg#xcloud-iconfont?timestamp=1577276337000') format('svg');
+}
+
+.multicolor-icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.3em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+i.icon {
+  font-family: kcs-icon !important;
+  font-style: normal;
+  margin: 0;
+}
+
+.global-linkable-text-item {
+  color: #3e86ed;
+  transition: $normal-transition;
+
+  &:hover {
+    cursor: pointer;
+    color: #1659ed;
+  }
+}
+
+.global-full-width {
+  width: 100%;
+}
+
+.global-flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.global-flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
