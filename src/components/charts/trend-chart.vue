@@ -91,8 +91,6 @@ export default {
       let minArr = [];
       let series = [];
       this.chartInfo.forEach(item => {
-        console.log(this.dataX)
-
         // maxArr.push(MaxArrValueTime(item.data));
         // minArr.push(MinArrValueTime(item.data));
         series.push({

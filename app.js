@@ -11,7 +11,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('*', function(req, res) {
-    const html = fs.readFileSync(path.resolve(__dirname, './dist/notice/web/index.html'), 'utf-8')
+    const html = fs.readFileSync(path.resolve(__dirname, './dist/crawler/web/index.html'), 'utf-8')
     res.send(html)
 });
 

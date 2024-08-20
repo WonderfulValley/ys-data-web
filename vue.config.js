@@ -8,8 +8,8 @@ module.exports = {
             'Access-Control-Allow-Origin': '*',
         },
     },
-    publicPath: '/notice/web',
-    outputDir: 'dist/notice/web',
+    publicPath: '/crawler/web',
+    outputDir: 'dist/ys-data-web/web',
     css: {
         loaderOptions: {
             sass: {

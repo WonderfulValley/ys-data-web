@@ -159,6 +159,8 @@
 </template>
 
 <script>
+import ROUTER_NAME from "/src/router/names";
+
 export default {
   name: "",
   components: {},
@@ -255,10 +257,14 @@ export default {
 
     route(index) {
       if (index == '1-1') {
-        /**
-         *   TODO
-         *   Lucky : 2022/1/5 11:47 上午
-         **/
+
+      }
+      if (index == '2-1'){
+        this.$router.push({
+          // path: "/tagging/tagging",
+          name: ROUTER_NAME.tagging.tagging,
+          query: {}
+        });
       }
     },
   },
