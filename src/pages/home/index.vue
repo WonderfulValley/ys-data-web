@@ -8,7 +8,11 @@
   <div>
     <div class="capacity-info">
       <div class="chart">
-        111
+        标注总览
+        <trend-chart :chartData="chartData1" :legend="legend1"
+                     :dataX="chartDataX1"
+        ></trend-chart>
+        爬虫总览
         <trend-chart :chartData="chartData1" :legend="legend1"
                      :dataX="chartDataX1"
         ></trend-chart>
@@ -60,6 +64,7 @@ export default {
       }
       this['legend' + num] = ['标注博主数量', '标注图片数量'];
       this['chartDataX' + num] = ['8-11', '8-12', '8-13', '8-14', '8-15', '8-16', '8-17', '8-18', '8-19', '8-20', '8-21', '8-22'];
+      // this['chartDataX' + num] = [1702387200, 1702473600, 1702560000, 1702646400, 1702732800, 1702819200, 1702905600, 1702992000, 1703078400, 1703164800, 1703251200, 1703337600];
       this['chartData' + num] = [obj,obj2];
     },
     getRuleDetailTrend() {

@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%;height:100%;" ref="chart">
+  <div style="width:90%;height:200px;" ref="chart">
   </div>
 </template>
 
@@ -90,10 +90,8 @@ export default {
       let maxArr = [];
       let minArr = [];
       let series = [];
-      console.log(123)
       this.chartInfo.forEach(item => {
-        console.log(item.data)
-        console.log(item.name)
+        console.log(this.dataX)
 
         // maxArr.push(MaxArrValueTime(item.data));
         // minArr.push(MinArrValueTime(item.data));
@@ -149,10 +147,10 @@ export default {
           top: 20,
         },
         xAxis: {
-          type: 'time',
-          boundaryGap: false,
+          // type: 'time',
+          // boundaryGap: false,
           data: this.dataX,
-          minInterval: 1800 * 1000,
+          // minInterval: 1800 * 1000,
           splitNumber: 10,
           axisTick: {
             show: false //去除刻度线
