@@ -266,6 +266,13 @@ export default {
           query: {}
         });
       }
+      if (index == '2-2'){
+        this.$router.push({
+          // path: "/tagging/tagging",
+          name: ROUTER_NAME.tagging.list,
+          query: {}
+        });
+      }
     },
   },
 };
