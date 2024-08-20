@@ -97,13 +97,6 @@
 
 <template>
     <div class="index-container">
-        <sre-menu v-if="isNil(isRunAsMicro)"
-                  :is-show-help="false"
-                  :is-show-feedback="false"
-                  @kim="kimEvent"
-                  :token="token"
-                  :user-information="userInformation">
-        </sre-menu>
         <section class="expect-for-navbar" :style="{ marginTop: isNil(isRunAsMicro) ? '3rem' : 0 }">
             <sidebar class="sidebar"></sidebar>
             <section class="except-for-sidebar">

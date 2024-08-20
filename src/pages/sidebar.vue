@@ -181,7 +181,7 @@ export default {
               disable: false,
             },
             {
-              index: '1-1',
+              index: '1-2',
               title: '博主池管理',
               icon: '&#xe699;',
               disable: true,
