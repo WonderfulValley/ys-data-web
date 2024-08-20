@@ -5,7 +5,7 @@
 </style>
 <template>
   <section style="display: flex;">
-    <section style="width: calc(100% - 13rem);">
+    <section style="width:100%;">
       <section style="margin: 10px; background-color: white; padding: 10px;">
 <!--        <section style="margin: 10px; background-color: white; padding: 10px;" v-if="auth">-->
         <article style="display: flex; justify-content: space-between; margin-bottom: 15px;">
