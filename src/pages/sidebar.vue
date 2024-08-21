@@ -172,39 +172,39 @@ export default {
       menus: [
         {
           index: "1",
-          title: "爬虫",
+          title: "标注",
           icon: "&#xe685;",
           disable: false,
           children: [
             {
               index: '1-1',
-              title: '爬虫总览',
-              icon: '&#xe699;',
-              disable: false,
-            },
-            {
-              index: '1-2',
-              title: '博主池管理',
-              icon: '&#xe699;',
-              disable: true,
-            }
-          ]
-        },
-        {
-          index: '2',
-          title: '标注',
-          icon: '&#xe693;',
-          disable: true,
-          children: [
-            {
-              index: '2-1',
               title: '标注总览',
               icon: '&#xe699;',
               disable: false,
             },
             {
-              index: '2-2',
+              index: '1-2',
               title: '标注',
+              icon: '&#xe699;',
+              disable: false,
+            }
+          ]
+        },
+        {
+          index: '2',
+          title: '爬虫',
+          icon: '&#xe693;',
+          disable: false,
+          children: [
+            {
+              index: '2-1',
+              title: '爬虫总览',
+              icon: '&#xe699;',
+              disable: false,
+            },
+            {
+              index: '2-2',
+              title: '博主池管理',
               icon: '&#xe699;',
               disable: false,
             }
@@ -256,19 +256,17 @@ export default {
     },
 
     route(index) {
-      if (index == '1-1') {
-
-      }
-      if (index == '2-1'){
+      // if (index == '1-1') {
+      //
+      // }
+      if (index == '1-1'){
         this.$router.push({
-          // path: "/tagging/tagging",
           name: ROUTER_NAME.tagging.tagging,
           query: {}
         });
       }
-      if (index == '2-2'){
+      if (index == '1-2'){
         this.$router.push({
-          // path: "/tagging/tagging",
           name: ROUTER_NAME.tagging.list,
           query: {}
         });

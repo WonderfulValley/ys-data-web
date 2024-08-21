@@ -24,11 +24,9 @@
               <el-radio-button label="4" @click.native="levelShieldClick(4)">P4</el-radio-button>
             </el-radio-group>
             <el-radio-group v-model="statusShield" size="mini" style="margin-left: 5px;">
-              <el-radio-button label="0" @click.native="statusShieldClick(0)">进行中({{typeof
-                  statisticsData.eventNotOverSize!='undefined'?statisticsData.eventNotOverSize:0}})
+              <el-radio-button label="0" @click.native="statusShieldClick(0)">进行中
               </el-radio-button>
-              <el-radio-button label="1" @click.native="statusShieldClick(1)">已结束({{typeof
-                  statisticsData.eventOverSize!='undefined'?statisticsData.eventOverSize:0}})
+              <el-radio-button label="1" @click.native="statusShieldClick(1)">已结束
               </el-radio-button>
             </el-radio-group>
           </div>
